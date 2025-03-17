@@ -14,7 +14,9 @@ export default function App() {
   const [category, setCategory] = useState("HTML");
 
 
-  //her ligger alle komponentene mine.
+  //her ligger alle komponentene mine. Pagetitle tar inn en prop som heter title og viser dermed resource library.
+  //onSelectedCategory={setCategory} beyr at når en bruker benytter seg av knappene i nav så oppdateres category staten, resources får da riktig kategori.
+  //Resources category viser ressursene basert på hvilken kategori brukeren har trykket på
   return (
     <Layout>
     <div>
